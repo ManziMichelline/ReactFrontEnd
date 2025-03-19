@@ -1,5 +1,5 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import type { Route } from "./+types/house"; // Ensure this file exists
+import { Welcome } from "./house"; // Ensure house.tsx exports Welcome
 
 export function meta({}: Route.MetaArgs) {
   return [

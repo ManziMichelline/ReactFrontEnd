@@ -1,12 +1,17 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import type { Route } from "./+types/house";
+import type { Route } from "./+types/house"; // Ensure this file exists!
+
+export function Welcome() {
+  return <h1>Welcome to the House Page</h1>;
+}
+
 export default function House() {
   const [propertyType, setPropertyType] = useState("All Type");
   const [neighborhood, setNeighborhood] = useState("Neighborhood");
-    return (
-      <div className="bg-cover bg-center min-h-screen" style={{ backgroundImage: "url('/house.jpg')" }}>
+
+  return (
+    <div className="bg-cover bg-center min-h-screen" style={{ backgroundImage: "url('/house.jpg')" }}>
 
       {/* Navbar */}
       <nav className="flex justify-between items-center p-6 bg-transparent text-white">
@@ -55,7 +60,7 @@ export default function House() {
           </button>
         </div>
       </div>
+
     </div>
-    )
-  }
-  
+  );
+}
